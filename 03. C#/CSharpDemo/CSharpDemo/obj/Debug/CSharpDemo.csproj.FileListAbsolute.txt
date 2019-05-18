@@ -1,0 +1,6 @@
+\\nvmanh\SHARE\Web\Tài liệu mới\03. C#\CSharpDemo\CSharpDemo\bin\Debug\CSharpDemo.exe.config
+\\nvmanh\SHARE\Web\Tài liệu mới\03. C#\CSharpDemo\CSharpDemo\bin\Debug\CSharpDemo.exe
+\\nvmanh\SHARE\Web\Tài liệu mới\03. C#\CSharpDemo\CSharpDemo\bin\Debug\CSharpDemo.pdb
+\\nvmanh\SHARE\Web\Tài liệu mới\03. C#\CSharpDemo\CSharpDemo\obj\Debug\CSharpDemo.exe
+\\nvmanh\SHARE\Web\Tài liệu mới\03. C#\CSharpDemo\CSharpDemo\obj\Debug\CSharpDemo.pdb
+\\nvmanh\SHARE\Web\Tài liệu mới\03. C#\CSharpDemo\CSharpDemo\obj\Debug\CSharpDemo.csprojResolveAssemblyReference.cache

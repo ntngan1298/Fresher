@@ -1,0 +1,112 @@
+﻿form {
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right: 0;
+    margin: 0px auto;
+    text-align: center;
+    vertical-align: middle;
+}
+.container{
+    margin: 0px;
+}
+
+body {
+    background-color: #ccc;
+}
+
+.form-login {
+    background-color: #ffffff;
+    margin: auto;
+    width: 650px;
+    height: 345px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+    .form-login .login-left {
+        background: url(../Icons/bgLogin.png) no-repeat bottom left;
+        height: 345px;
+        float: left;
+        display: block;
+        width: 311px;
+    }
+
+    .form-login .login-right {
+        height: 345px;
+        float: left;
+        display: block;
+    }
+
+        .form-login .login-right .label {
+            padding: 4px 8px;
+            width: 40px;
+        }
+
+        .form-login .login-right h2 {
+            margin-top: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #2139c8;
+        }
+
+    .form-login .login-row {
+        margin: 4px 0px;
+    }
+
+.cls-icon-user {
+    width: 24px;
+    height: 18px;
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    color: #7f7f7f;
+    font-size: 14px;
+}
+
+.cls-icon-pw {
+    width: 24px;
+    height: 18px;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    color: #7f7f7f;
+    font-size: 14px;
+}
+
+.icon-user {
+    background: url(../Icons/iconLogin.png) no-repeat scroll 2px 4px rgba(0,0,0,0);
+    height: 18px;
+}
+
+.icon-pw {
+    background: url(../Icons/iconLogin.png) no-repeat scroll 2px -13px rgba(0,0,0,0);
+    height: 18px;
+}
+
+.wrap-control {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.form-login input {
+    padding: 5px 5px 5px 25px;
+}
+
+#btnLogin {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    text-transform: uppercase;
+    border: none;
+    color: #fff;
+    background-color: #2139c8;
+    font-weight: 500;
+}

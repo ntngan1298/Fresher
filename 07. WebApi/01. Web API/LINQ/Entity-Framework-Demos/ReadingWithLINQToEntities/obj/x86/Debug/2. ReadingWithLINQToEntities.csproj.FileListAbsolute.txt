@@ -1,0 +1,11 @@
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\Entity-Framework-Demos\ReadingWithLINQToEntities\bin\Debug\ReadingWithLINQToEntities.exe.config
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\Entity-Framework-Demos\ReadingWithLINQToEntities\bin\Debug\ReadingWithLINQToEntities.exe
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\Entity-Framework-Demos\ReadingWithLINQToEntities\bin\Debug\ReadingWithLINQToEntities.pdb
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\Entity-Framework-Demos\ReadingWithLINQToEntities\bin\Debug\UsingEntityFrameworkModel.dll
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\Entity-Framework-Demos\ReadingWithLINQToEntities\bin\Debug\UsingEntityFrameworkModel.pdb
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\Entity-Framework-Demos\ReadingWithLINQToEntities\bin\Debug\UsingEntityFrameworkModel.dll.config
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\Entity-Framework-Demos\ReadingWithLINQToEntities\obj\x86\Debug\2. ReadingWithLINQToEntities.csprojAssemblyReference.cache
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\Entity-Framework-Demos\ReadingWithLINQToEntities\obj\x86\Debug\2. ReadingWithLINQToEntities.csproj.CoreCompileInputs.cache
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\Entity-Framework-Demos\ReadingWithLINQToEntities\obj\x86\Debug\2. ReadingWithLINQToEntities.csproj.CopyComplete
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\Entity-Framework-Demos\ReadingWithLINQToEntities\obj\x86\Debug\ReadingWithLINQToEntities.exe
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\Entity-Framework-Demos\ReadingWithLINQToEntities\obj\x86\Debug\ReadingWithLINQToEntities.pdb

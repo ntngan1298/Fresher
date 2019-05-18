@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="jquery-1.9.1.min.js"></script>
+    <script>
+
+$(document).ready(function () {
+    for (var i = 1; i <= 3; i++) {
+		(function(i){
+			$("#btn" + i).click(function () {
+				alert("Button " + i + " was clicked");
+			});
+		})(i);
+    }
+});
+
+var logger = {};
+
+function globalLogger(){
+
+ if(typeof global_log === "undefined"){
+	global_log = this;
+ }
+ return global_log;
+ 
+}
+
+var gLog1 = new globalLogger();
+var gLog2= new globalLogger();
+alert(gLog1 === gLog2);
+
+function publicPropLogger(){
+ if(typeof publicPropLogger.single_instance === "undefined"){
+	publicPropLogger.single_instance = this;
+ }
+ return publicPropLogger.single_instance;
+}
+
+var pLog1 = new publicPropLogger();
+var pLog2= new publicPropLogger();
+alert(pLog1 === pLog2);
+
+var cLogger = (function(){
+	var instance;
+	
+	function createInstance(){
+		var obj = new Object("I'm the instance");
+		return obj;
+	}
+	
+	return {
+		getInstance:function(){
+			if(!instance){
+				instance = createInstance();
+			}
+			return instance;
+		},
+	};
+})();
+
+var cLog1 = cLogger.getInstance();
+var cLog2 = cLogger.getInstance();
+alert(cLog1 === cLog2);
+
+var sLog;
+(function(){
+	var instance;
+	sLog = function sLog(){
+		if(instance){
+			return instance;
+		}
+		 instance = this;
+	}
+}());
+
+    </script>
+</head>
+<body>
+    <div id="btn1">Click</div>
+    <div id="btn2">Click</div>
+    <div id="btn3">Click</div>
+</body>
+</html>
+

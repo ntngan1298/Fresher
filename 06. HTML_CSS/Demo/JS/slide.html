@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo show hide</title>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#Button1").click(function () {
+                $("#hide").slideDown("slow");
+            });
+
+            $("#show").click(function () {
+                $("#hide").slideUp("slow");
+            });
+
+        });
+    </script>
+</head>
+<body>
+   
+    <div id="hide" style="background-color:red; height:100px; width:100px"></div>
+    <input type="button" value="Slide down" id="Button1" />
+    <input type="button" value="Slide up" id="show" />
+</body>
+</html>

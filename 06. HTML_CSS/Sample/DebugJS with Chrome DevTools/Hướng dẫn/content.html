@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)file:///C:/Users/nvmanh.FRESHER/Downloads/DEBUGIS/debugJavascript.html -->
+<html lang="vi" data-sbro-popup-lock="true" data-sbro-ads-lock="true" data-sbro-deals-lock="true" data-sbro-extensions-lock="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    
+    <title>Chrome, DevTools, debug, debugging, JavaScript, breakpoint</title><meta name="keywords" content="Chrome, DevTools, debug, debugging, JavaScript, breakpoint"><meta name="description" content="Chrome, DevTools, debug, debugging, JavaScript, breakpoint">
+    <meta property="fb:app_id" content="290270177727593">
+<meta property="og:site_name" content="techmaster.vn">
+<meta property="og:locale" content="vi_VN">
+
+<meta property="og:url" content="https://techmaster.vn/posts/34380/huong-dan-debugging-javascript-trong-chrome-dev-tools">
+
+
+    <meta property="og:type" content="article">
+
+
+    <meta property="og:title" content="Hướng dẫn debugging JavaScript trong Chrome DevTools">
+
+
+    <meta property="og:description" content="Nếu bạn đang sử dụng&amp;nbsp;console.log()&amp;nbsp;để tìm và fix các bug trong code của mình, hãy xem xét sử dụng quy trình được phác thảo trong hướng dẫn này. Nó thường nhanh và hiệu quả hơn rất nhiều.">
+
+
+    <meta property="og:image" content="https://techmaster.vn/fileman/Uploads/users/188/chrome_devtools.jpg">
+
+
+
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./images/icon">
+    <link rel="stylesheet" type="text/css" href="./css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/monokai.css">
+    <link rel="stylesheet" type="text/css" href="./css/style_animate.css">
+    
+    
+    <style>
+        .hisella-messages {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            z-index: 999999;
+        }
+
+        .hisella-messages-outer {
+            position: relative;
+        }
+
+        #hisella-minimize {
+            background: #3b5998;
+            font-size: 14px;
+            color: #fff;
+            padding: 3px 10px;
+            position: absolute;
+            top: -34px;
+            left: -1px;
+            border: 1px solid #E9EAED;
+            cursor: pointer;
+        }
+
+        .hisella-messages {
+            bottom: -300px;
+            right: -105px;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="./css/blog.css">
+
+    <script type="text/javascript" async="" src="./js/recaptcha__en.js.download">
+	</script>
+	<!-- <script async="" src="file://tr.topdevvn.com/js/follow.js" charset="UTF-8" crossorigin="*"></script> -->
+	<!-- <script async="" src="file://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="./js/recaptcha__en.js(1).download"></script> -->
+	<!-- <script async="" src="file://tr.topdevvn.com/js/follow.js" charset="UTF-8" crossorigin="*"></script> -->
+	<!-- <script async="" src="file://www.google-analytics.com/analytics.js"></script> -->
+	<script type="text/javascript" async="" src="./js/recaptcha__en.js(2).download"></script>
+	<script id="facebook-jssdk" src="./js/sdk.js.download"></script><script async="" src="./js/follow.js.download" charset="UTF-8" crossorigin="*"></script>
+	<script async="" src="./js/analytics.js.download"></script>
+	<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-31629610-1', 'auto');
+		  ga('send', 'pageview');
+
+	</script>
+
+    <script src="./js/api.js.download" async="" defer=""></script>
+    <script type="text/javascript" src="./js/jquery.min.js.download"></script>
+<style type="text/css">/*style-recomment*/.box-rcm #rcm-hireme{transition: all 0.6s ease-in-out; font-family: 'Roboto', sans-serif; overflow: hidden; height: 0;}.box-rcm div.rcm-jobs-multi.x-rcm{padding: 0}.box-rcm div.rcm-jobs-multi.tagged{line-height: 140%;}.box-rcm div.rcm-jobs-multi.j-orange{background-position: center 3px;}.box-rcm div.rcm-jobs-multi.blue, div.rcm-jobs-multi.j-orange {background-image: none!important;}.box-rcm div.rcm-jobs-multi {color: #333;font-family: Roboto,Helvetica,Verdana,Arial,sans-serif;font-size: 12px;text-align: left;line-height: 130%;padding: 2px;margin: 12px 0 1.5em;clear: both;background-repeat: no-repeat;background-position: 0 0;box-sizing: border-box;}.box-rcm div.rcm-jobs-multi.x-rcm.j-orange>a.header-top {background-color: #d94127; background-image: linear-gradient(to right,rgba(214,67,48,.9) 0,rgba(255,200,200,.9) 100%), url(https://topdev.vn/assets/img/logo_white.png); background-position-x: center; background-size: auto 100%;}.box-rcm div.rcm-jobs-multi.x-rcm>a.header-top {line-height: 50px;height: 50px;position: relative;background-repeat: no-repeat;}.box-rcm div.rcm-jobs-multi>a.header-top {width: 100%;display: block;color: #efefef;text-align: left; padding-left: 15px; font-size: 20px;line-height: 42px;text-decoration: none;}.box-rcm div.rcm-jobs-multi.x-rcm>.ljobs-rcm {padding: 12px;border: 1px solid #e4e6e8;border-top: none; border-bottom: 2px solid #d94127}.box-rcm div.rcm-jobs-multi>.ljobs-rcm {background: #fff;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul {margin: 0;padding: 0;list-style: none;display: block;}.box-rcm div.rcm-jobs-multi.x-rcm>.ljobs-rcm>ul li {border-top-color: #eff0f1;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul>li:first-child {border-top: none;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul>li {border-top: 1px solid #d6d9dc;position: relative; list-style: none;}.box-rcm div.rcm-jobs-multi.x-rcm>.ljobs-rcm>ul .job-wrap {padding-left: 0;padding-right: 0;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul .job-wrap:first-child {border-top: none;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul .job-wrap {overflow: hidden;margin: 0;padding: 5px 12px;position: relative;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul .job-wrap a.job {display: block;cursor: pointer;text-decoration: none; float: left; width: 84%; }.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul .job-wrap .title {font-weight: 700;font-size: 13px;display: block;cursor: pointer;text-decoration: none;color: #be5656;padding-right: 12px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul .job-wrap div {margin: 3px 0; line-height: 26px;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul .job-wrap .company {font-weight: 700;color: #505050;margin-right: 7px; font-size: 12px;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul .job-wrap .location, .j-salary {color: #505050;font-style: italic; font-size:12px; display: inline-block; margin-right: 7px;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul .job-wrap .location svg, .j-salary svg {height: 12px;width: 12px;position: relative;top: 1px;fill: #b5b7b8;display: inline-block;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul .job-wrap .location>span, .j-salary>span {display: inline-block;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul .job-wrap .post-tag {text-align: center;color: #000;background-color: #f5f5f5;padding: .25em .5em;margin: 0 2px 2px 0!important;text-decoration: none;font-size: 12px;line-height: 1.4;white-space: nowrap;display: inline-block;border-radius: 0;border: 1px solid #ddd;float: none;font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul .job-wrap .thumbnail{float: left; width: 15%; margin-right: 1%; overflow: hidden; display: flex; align-items: center; justify-content: center;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul .job-wrap .thumbnail .item-logo{width:60% !important; height: auto !important; border:none; margin: 0 auto; padding: 10% 2%;}@media screen and (min-width: 320px) and (max-width: 800px) {.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul li{margin-left:0px;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul .job-wrap .thumbnail{display: none}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul .job-wrap a.job {width: 100%;}}</style><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_customer_chat_bounce_in{animation-duration:250ms;animation-name:fb_bounce_in}.fb_customer_chat_bounce_out{animation-duration:250ms;animation-name:fb_fade_out}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_mobile_overlay_active{background-color:#fff;height:100%;overflow:hidden;position:fixed;visibility:hidden;width:100%}@keyframes fb_fade_out{from{opacity:1}to{opacity:0}}@keyframes fb_bounce_in{0%{opacity:0;transform:scale(.8, .8);transform-origin:100% 100%}10%{opacity:.1}20%{opacity:.2}30%{opacity:.3}40%{opacity:.4}50%{opacity:.5}60%{opacity:.6}70%{opacity:.7}80%{opacity:.8;transform:scale(1.03, 1.03)}90{opacity:.9}100%{opacity:1;transform:scale(1, 1)}}</style><script>function patch() {
+
+    window._open = window.open;
+    document._createElement = document.createElement;
+    document._createEvent = document.createEvent;
+    window._parent = (window.location != window.parent.location) ? document.referrer: document.location;
+
+    function getParent(el, selector) {
+        var parent = el.parentNode;
+        if (parent == document) {
+            return null;
+        }
+        if (parent.matches(selector)) {
+            return parent;
+        } else {
+            return getParent(parent, selector);
+        }
+    }
+
+    function blockWindow(args) {
+        var target;
+        if (window.event) {
+            target = window.event.target.tagName.toLowerCase() == 'a' ?
+                window.event.target : getParent(window.event.target, 'a');
+        }
+        parent.postMessage({
+            type: "safeBlock",
+            url: args && args.length > 0 ? args[0] : '',
+            args: args ? Array.from(args) : null,
+            href: target ? target.href : null
+        }, window._parent);
+    }
+
+    window.open = function() {
+        blockWindow(arguments);
+    };
+
+    dispatchEvent = function(element) {
+        return function(event) {
+            if (event.type == "click") {
+                blockWindow([element.getAttribute('href')]);
+            }
+        }
+    };
+
+    document.createElement = function() {
+        var element = document._createElement.apply(document, arguments);
+        if (arguments[0].toLowerCase() == 'a') {
+            element.dispatchEvent = dispatchEvent(element);
+        }
+        return element;
+    };
+
+    // Process saved popup.
+    var html = document.querySelector('html'),
+        key = 'data-sbro-popup-current',
+        url = html.getAttribute(key);
+    if (url) {
+        blockWindow([url]);
+    }
+
+}; patch();</script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_customer_chat_bounce_in{animation-duration:250ms;animation-name:fb_bounce_in}.fb_customer_chat_bounce_out{animation-duration:250ms;animation-name:fb_fade_out}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_mobile_overlay_active{background-color:#fff;height:100%;overflow:hidden;position:fixed;visibility:hidden;width:100%}@keyframes fb_fade_out{from{opacity:1}to{opacity:0}}@keyframes fb_bounce_in{0%{opacity:0;transform:scale(.8, .8);transform-origin:100% 100%}10%{opacity:.1}20%{opacity:.2}30%{opacity:.3}40%{opacity:.4}50%{opacity:.5}60%{opacity:.6}70%{opacity:.7}80%{opacity:.8;transform:scale(1.03, 1.03)}90{opacity:.9}100%{opacity:1;transform:scale(1, 1)}}</style><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_customer_chat_bounce_in{animation-duration:250ms;animation-name:fb_bounce_in}.fb_customer_chat_bounce_out{animation-duration:250ms;animation-name:fb_fade_out}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_mobile_overlay_active{background-color:#fff;height:100%;overflow:hidden;position:fixed;visibility:hidden;width:100%}@keyframes fb_fade_out{from{opacity:1}to{opacity:0}}@keyframes fb_bounce_in{0%{opacity:0;transform:scale(.8, .8);transform-origin:100% 100%}10%{opacity:.1}20%{opacity:.2}30%{opacity:.3}40%{opacity:.4}50%{opacity:.5}60%{opacity:.6}70%{opacity:.7}80%{opacity:.8;transform:scale(1.03, 1.03)}90{opacity:.9}100%{opacity:1;transform:scale(1, 1)}}</style></head>
+
+<body>
+<!--Topdev Ads-->
+<script type="text/javascript">
+    (function(){
+        var s1=document.createElement('script'),s0=document.getElementsByTagName('script')[0];
+        s1.async=true;
+        s1.src='//tr.topdevvn.com/js/follow.js';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+<!--End Topdev Ads-->
+
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId: '290270177727593',
+            xfbml: true,
+            version: 'v2.5'
+        });
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/vi_VN/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+<header class="site-nav">
+    
+        
+    
+
+    
+</header>
+
+
+
+
+
+
+
+
+
+    <section>
+
+        <main class="container">
+            
+            <div class="page-main white">
+                <div class="post-content" itemscope="" itemtype="http://schema.org/NewsArticle">
+                    <meta itemscope="" itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://techmaster.vn/posts">
+                    <div itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject">
+                        <meta itemprop="url" content="https://techmaster.vn/fileman/Uploads/users/188/chrome_devtools.jpg">
+                        <meta itemprop="width" content="800">
+                        <meta itemprop="height" content="800">
+                    </div>
+                    <div itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization">
+                        <div itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject">
+                            <meta itemprop="url" content="https://techmaster.vn/img/logo.png">
+                            <meta itemprop="width" content="142">
+                            <meta itemprop="height" content="44">
+                        </div>
+                        <meta itemprop="name" content="TechmasterVn">
+                    </div>
+                    <div class="header-post center ">
+                        <h1 class="heading-title-large" itemprop="headline">Hướng dẫn debugging JavaScript trong Chrome DevTools</h1>
+                        
+                    </div>
+
+                    <div class="main-post ">
+                        <article class="content">
+                            <p></p>
+
+<p style="text-align:center"><img alt="" src="./images/chrome_devtools.jpg" style="max-width:100%"></p>
+
+<p>Hướng dẫn tương tác từng bước một này, sẽ dạy bạn quy trình cơ bản để debugging JavaScript trong Chrome DevTools. Nó&nbsp;sẽ cho bạn thấy cách debug một vấn đề cụ thể, nhưng quy trình chung mà bạn học được có thể áp dụng để debugging tất cả các loại bug của JavaScript.</p>
+
+<p>Nếu bạn đang sử dụng <strong>console.log()</strong> để tìm và fix các bug trong code của mình, hãy xem xét sử dụng quy trình được phác thảo trong hướng dẫn này. Nó thường nhanh và hiệu quả hơn rất nhiều.</p>
+
+<h2>Bước 1: Tái hiện bug</h2>
+
+<p>Tái hiện bug (reproduce) luôn là bước đầu tiên để debugging. "Tái hiện bug" có nghĩa là tìm ra một loạt các hành động làm cho bug xuất hiện. Bạn có thể cần tái hiện bug nhiều lần, vì thế cố gắng loại bỏ bất kỳ bước nào không cần thiết.</p>
+
+<p>Làm theo&nbsp;hướng dẫn dưới đây để tái hiện bug, cái bạn sẽ fix trong bài viết này.</p>
+
+<ol>
+	<li>Click <a href="https://googlechrome.github.io/devtools-samples/debug-js/get-started" target="_blank"><strong>Open Demo</strong></a>. Trang demo sẽ mở trong tab mới.</li>
+	<li>Trên trang demo, nhập 5 cho <strong>Number 1</strong>.</li>
+	<li>Nhập 1 cho <strong>Number 2</strong>.</li>
+	<li>Click <strong>Add Number 1 và Nubmer 2</strong>.</li>
+	<li>Kết quả sẽ là <strong>5 + 1 = 51</strong>.</li>
+</ol>
+
+<p>Kết quả này là sai. Kết quả đúng phải là <strong>6</strong>. Và đây chính là lỗi bạn sẽ fix.</p>
+
+<h2>Bước 2: Tạm dừng code với một&nbsp;breakpoint</h2>
+
+<p>DevTools giúp bạn tạm dừng code trong quá trình thực thi, và kiểm tra&nbsp;giá trị của tất cả các biến tại thời điểm đó. Công cụ để tạm dừng code gọi là <strong>breakpoint</strong>. Hãy thử:</p>
+
+<p>1. Mở DevTools trên trang demo bằng cách nhấn <strong>Command + Option + I (Mac)</strong> hoặc <strong>Control + Shift + I (Windows, Linux)</strong>.</p>
+
+<p>2. Click <strong>Sources</strong> tab.</p>
+
+<p>&nbsp;3. Click <strong>Event Listener Breakpoint</strong> để mở rộng phần này. <strong>DevTools</strong> sẽ liệt kê một loạt các loại event có thể mở rộng, chẳng hạn <strong>Animation</strong> và <strong>Clipboard</strong>.</p>
+
+<p>4. Di chuyển đến mục <strong>Mouse</strong>, click <strong>Expand</strong>. DevTools sẽ hiển thị danh sách các mouse event, chẳng hạn <strong>click</strong>, với checkbox bên cạnh.</p>
+
+<p>5. Chọn <strong>click</strong> event.</p>
+
+<div style="text-align:center">
+<figure class="image" style="display:inline-block"><img alt="" src="./images/get-started-click-breakpoint.png" style="max-width:100%">
+<figcaption>DevTools được mở trên trang demo, với Sources planel được mở và click event listener được cho phép. Nếu cửa số DevTools của bạn lớn, Event Listener Breakpoints có thể ở bên phải thay vì ở phía dướ bên trái như hình trên.</figcaption>
+</figure>
+</div>
+
+<p>6. Click <strong>Add Number 1 and Number 2</strong> một lần nữa. DevTools tạm dừng và highlight một dòng code trong <strong>Sources</strong> panel. DevTool highlight dòng này:</p>
+
+<pre><code class="language-javascript hljs"><span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword">function</span></span></span></span></span><span class="hljs-function"><span class="hljs-function"> </span></span><span class="hljs-title"><span class="hljs-function"><span class="hljs-title"><span class="hljs-function"><span class="hljs-title">onClick</span></span></span></span></span><span class="hljs-params"><span class="hljs-function"><span class="hljs-params"><span class="hljs-function"><span class="hljs-params">()</span></span></span></span></span><span class="hljs-function"><span class="hljs-function"> </span></span></span>{</code></pre>
+
+<p>Khi bạn chọn click event, bạn đã thiết lập event-based&nbsp;breakpoint dựa trên tất cả các event click. Khi bất kỳ node nào được click, và node đó có một click handler (hàm thực thi khi event xảy ra), DevTools tự động dừng trên dòng đầu tiên của&nbsp;click handler.</p>
+
+<p>Chú ý: Đây chỉ là một trong nhiều kiểu breakpoint mà DevTools cung cấp. Breakpoint bạn cần sẽ phụ thuộc vào kiểu vấn đề bạn đang debugging.</p>
+
+<div class="marker" style="background-color:#FFFF66;padding:1px 15px;">Tham khảo các <a href="https://techmaster.vn/khoa-hoc" target="_blank">khóa học lập trình</a> online, onlab, và <a href="https://techmaster.vn/posts/33583/thuc-tap-lap-trinh-web-mobile" target="_blank">thực tập lập trình</a>&nbsp;tại TechMaster</div>
+
+<h2>Bước 3: Duyệt&nbsp;qua code</h2>
+
+<p>Một trong những nguyên nhân phổ biến gây ra bug là khi script thực thi sai thứ tự. Duyệt&nbsp;qua code cho phép bạn thực thi code, từng dòng một và tìm ra chính xác nơi thực thi code theo thứ tự khác với bạn muốn. Hãy thử:</p>
+
+<p>1. Trên <strong>Sources</strong> panel của DevTools, click <strong>Step into next function call <img alt="" src="./images/step-into.png" style="max-width:100%"></strong>tới bước thực thi hàm <strong>onClick()</strong>, từng dòng một. DevTools highlight dòng code sau:</p>
+
+<pre><code class="language-javascript hljs"><span class="hljs-keyword"><span class="hljs-keyword"><span class="hljs-keyword">if</span></span></span> (inputsAreEmpty()) {</code></pre>
+
+<p>2. Click<strong> Step over next function call&nbsp;<img alt="" src="./images/step-over.png" style="max-width:100%"></strong>. DevTools thực thi <strong>inputsAreEmpty() </strong>mà không đi vào trong nó. Chú ý cách DevTools bỏ qua một vài dòng code. Bởi vì <strong>inputsAreEmpty()</strong> có giá trị false, vì thế khối lệnh if không được thực thi.</p>
+
+<p>Đó là ý tưởng cơ bản về việc duyệt&nbsp;qua code. Nếu bạn xem code trong <strong>get-started.js</strong>, bạn có thể thấy rằng bug sẽ ở đâu đó trong hàm <strong>updateLabel()</strong>. Thay vì đi qua mọi dòng code, bạn có thể sử dụng một kiểu breakpoint khác để tạm dừng code gần hơn với vị trí của bug.</p>
+
+<h2>Bước 4: Thiết lập một breakpoint khác</h2>
+
+<p>Line-of-code breakpoint là kiểu beakpoint phổ biến nhất. Khi bạn có một dòng code cụ thể, và&nbsp;muốn tạm dừng ở đó, sử dụng line-of-code breakpoint. Hãy thử:</p>
+
+<ol>
+	<li>Nhìn vào dòng code cuối dùng của hàm updateLabel(), nó như thế này:&nbsp;</li>
+</ol>
+
+<pre><code class="language-javascript hljs">label.textContent = addend1 + <span class="hljs-string"><span class="hljs-string"><span class="hljs-string">' + '</span></span></span> + addend2 + <span class="hljs-string"><span class="hljs-string"><span class="hljs-string">' = '</span></span></span> + sum;</code></pre>
+
+<ol>
+	<li>Ở phía bên trái của code, bạn có thể thấy số dòng của đoạn code này là 32. Click vào 32. DevTools đặt một icon màu xanh dương ở đó. Điều này có nghĩa là có một&nbsp;line-of-code breakpoint trên dòng này. DevTools sẽ luôn dừng trước khi dòng code này được thực thi.</li>
+	<li>Click <strong>Resume script execution&nbsp;<img alt="" src="./images/resume-script-execution.png" style="max-width:100%"></strong>. Script tiếp tục thực thi cho đến dòng code bạn đặt breakpoint.</li>
+	<li>Nhìn vào những dòng code trong updateLabel() cái đã được thực thi. DevTools in ra giá trị của <strong>addend1</strong>, <strong>addend2</strong> và <strong>sum</strong>.</li>
+</ol>
+
+<p>Giá trị của <strong>sum</strong> có vẻ đáng nghi ngờ. Nó giống như là một chuỗi, trong khi nó phải là một số. Đây có thể là nguyên nhân gây ra lỗi.</p>
+
+<h2>Bước 5: Kiểm tra các giá trị của biến</h2>
+
+<p>Một nguyên nhân phổ biến khác có thể gây ra bug là khi một biến hay một function tạo ra một giá khác với mong đợi. Nhiều lập trình viên sử dụng <strong>console.log()</strong> để theo dõi&nbsp;các biến thay đổi như thế nào, nhưng <strong>console.log()</strong> có thể khá tẻ nhạt và không hiệu quả vì 2 lý do. Đầu tiên, bạn cần chỉnh sửa code với nhiều câu lệnh <strong>console.log()</strong>. Thứ hai, bạn có thể không biết chính xác biến nào liên quan tới bug, vì thế bạn cần in ra nhiều biến.</p>
+
+<p>Một trong những sự thay thế của DevTools với console.log() là <strong>Watch Expressions</strong>. Sử dụng <strong>Watch Expressions</strong> để theo dõi giá trị của các biến theo thời gian. Như &nbsp;tên gọi <strong>Watch Expressions</strong> không chỉ giới hạn trong các biến. Bạn có thể lưu trữ mọi biểu thức JavaScript trong <strong>Watch Expression</strong>. Hãy thử:</p>
+
+<ol>
+	<li>Trên <strong>Sources</strong> panel của DevTools, click <strong>Watch</strong>.&nbsp;</li>
+	<li>Click <strong>Add Expression&nbsp;<img alt="" src="./images/add-expression.png" style="max-width:100%"></strong>.</li>
+	<li>Nhập <strong>typeof sum</strong>.</li>
+	<li>Nhấn <em>Enter</em>. DevTools hiển thị&nbsp;<strong>typeof sum: "string"</strong>. Giá trị bên phải dấu hai chấm là kết quả Watch Expression của bạn.</li>
+</ol>
+
+<div style="text-align:center">
+<figure class="image" style="display:inline-block"><img alt="" src="./images/get-started-watch-expression.png" style="max-width:100%">
+<figcaption><strong>Watch Expression</strong> panel (phía dưới bên phải), sau khi tạo <strong>typeof Watch Expression</strong>. Nếu cửa sổ DevTools của bạn lớn, <strong>Watch Expression</strong> panel sẽ ở bên phải, phía trên <strong>Event Listener Breakpoints</strong> panel.</figcaption>
+</figure>
+</div>
+
+<p>Đúng như dự đoán, <strong>sum</strong> là một chuỗi, thay vì là một số. Đây chính là nguyên nhân gây ra lỗi.</p>
+
+<p>Công cụ thay thế thứ 2 của DevTools cho <strong>console.log()</strong> là <strong>Console</strong>. Sử dụng <strong>Console</strong> để thực hiện&nbsp;các câu lệnh JavaScript. Các lập trình viên thường sử dụng <strong>Console</strong> để ghi đè giá trị của biến khi debugging. Trong trường hợp này, <strong>Console</strong> có thể giúp kiểm tra các phương án fix bug của bạn. Hãy thử:</p>
+
+<ol>
+	<li>Nếu panel <strong>Console</strong> của bạn chưa mở, nhấn <strong>Escape (Esc)</strong> để mở nó. Nó sẽ mở ở bên dưới&nbsp;cửa sổ DevTools.</li>
+	<li>Trong <strong>Console</strong>, nhập <strong>parseInt(addend1) + parseInt(addens2)</strong>.</li>
+	<li>Nhấn <em>Enter</em>. DevTools sẽ thực thi và in ra kết quả là 6, đây là kết quả bạn mong đợi.</li>
+</ol>
+
+<p style="text-align:center"><img alt="" src="./images/get-started-console.png" style="max-width:100%"></p>
+
+<h2>Bước 6: Fix lỗi</h2>
+
+<p>Sau khi đã xác định được phương án để fix bug. Bạn cần chỉnh sửa code với phương án của mình và chạy lại code. Bạn không cần phải rời khỏi DevTools để làm điều đó. Bạn có thể chỉnh sửa code JavaScript trực tiếp trong DevTools UI. Hãy thử:</p>
+
+<ol>
+	<li>Trong trình soạn thảo trên Sources panel của DevTools, thay &nbsp;thế <strong>var sum = addend1 + addend2</strong> với <strong>var sum = parseInt(addend1) + parseInt(addend2);&nbsp;</strong>.&nbsp;</li>
+	<li>Nhấn <strong>Command + S (Mac)</strong> hay <strong>Control + S (Windows, Linux)</strong> để lưu thay đổi của bạn. Background của code thay đổi thành màu đỏ báo hiệu rằng script đã được thay đổi trong DevTools.</li>
+	<li>Click <strong>Deactivate breakpoints&nbsp;<img alt="" src="./images/deactivate-breakpoints-button.png" style="max-width:100%"></strong>. Nó thay đổi thành màu xanh dương báo hiệu đã hoạt động. Trong thiết lập này, DevTools sẽ bỏ qua mọi breakpoint bạn đã thiết lập.</li>
+	<li>Click <strong>Resume script execution&nbsp;<img alt="" src="./images/resume-script-execution.png" style="max-width:100%"></strong>.</li>
+	<li>Thử demo với các giá trị khác. Demo hiện giờ sẽ tính toán chính xác giá trị của sum.</li>
+</ol>
+
+<p>Nhớ rằng quy trình này chỉ áp dụng để fix code đang chạy trong trình duyệt của bạn. Nó không fix code cho tất cả người dùng chạy trang web của bạn. Để làm điều đó, bạn cần fix code, cái đang ở&nbsp;trên server của bạn.</p>
+
+<h2>Bước tiếp theo</h2>
+
+<p>Chúc mừng! Bây giờ bạn đã biết những thứ cơ bản về debugging JavaScript trong DevTools.</p>
+
+<p>Bài hướng dẫn này mới chỉ cho bạn thấy 2 cách để thiết lập breakpoint. DevTools cung cấp nhiều cách khác, bao gồm:</p>
+
+<ul>
+	<li>Conditional breakpoint chỉ được kích hoạt khi điều kiện bạn cung cấp là true.</li>
+	<li>Breakpoint có thể bắt hoặc không bắt các exception.</li>
+	<li>XHR breakpoint chỉ kích hoạt khi các URL phù hợp với chuỗi bạn cung cấp</li>
+</ul>
+
+<h2>Đọc thêm</h2>
+
+<p><a href="https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints" target="_blank">https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints</a></p>
+
+<p><a href="https://developers.google.com/web/tools/chrome-devtools/javascript/reference#stepping" target="_blank">https://developers.google.com/web/tools/chrome-devtools/javascript/reference#stepping</a></p>
+
+                        </article>
+                    </div>
+
+                    <!--Topdev Ads-->
+                    <div class="ml-rcm" rc-type="job" rc-layout="bjobs" rc-li="3" rc-for="url" rc-title="Những việc làm hấp dẫn" token-site="2GKyfR2kB%2B4zw9XJipNqO6DMfe%2BV229B7ZiluQtWJI9LX1uPwFlwozMj46msl2Apj7%2Fh4JPCx50lyJbxiSsp0Q%3D%3D" animate="off"><div class="box-rcm"><div class="j-orange tagged x-rcm rcm-jobs-multi" id="rcm-hireme" style="height: auto !important"><iframe src="./images/vgg-tag-m.html" style="display: none !important;"></iframe></div></div></div>
+                    <!--End Topdev Ads-->
+
+                    
+
+                    
+                        
+                            
+                        
+
+                        <div class="col s12">
+                            
+
+<div class="fb-comments fb_iframe_widget fb_iframe_widget_fluid fb_iframe_widget_loader fb_hide_iframes" data-href="" data-width="100%" data-numposts="" data-order_by="social" data-colorscheme="light" fb-xfbml-state="rendered"><span style="height: 100px;"><iframe id="f97f5c73693bb4" name="f2b3178fcbe2c14" scrolling="no" title="Facebook Social Plugin" class="fb_ltr" src="./images/comments.html" style="border: none; overflow: hidden; height: 100px; width: 100%;"></iframe></span></div>
+                        </div>
+                    
+                </div>
+            </div>
+        </main>
+    </section>
+
+
+
+
+
+
+<script>
+
+</script>
+
+<!--Back to top button-->
+
+
+
+
+
+
+<div class="hisella-messages">
+    <div class="hisella-messages-outer">
+        <div id="hisella-minimize"><i class="fa fa-comment"></i> Hỗ trợ trực tuyến</div>
+        <div id="hisella-facebook" class="fb-page fb_iframe_widget" data-adapt-container-width="true" data-height="300" data-hide-cover="false" data-href="https://www.facebook.com/techmastervn/" data-show-facepile="true" data-show-posts="false" data-small-header="false" data-tabs="messages" data-width="250" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=290270177727593&amp;container_width=0&amp;height=300&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Ftechmastervn%2F&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=false&amp;small_header=false&amp;tabs=messages&amp;width=250"><span style="vertical-align: top; width: 0px; height: 0px; overflow: hidden;"><iframe name="fa3918232dee2" width="250px" height="300px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:page Facebook Social Plugin" src="./images/page.html" style="border: none; visibility: visible; width: 0px; height: 0px;"></iframe></span></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="./images/materialize.min.js.download"></script>
+<script type="text/javascript" src="./images/base.js.download"></script>
+<script type="text/javascript" src="./images/highlight.pack.js.download"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+<script>
+    
+
+    // Chat
+    (function ($) {
+      $(document).ready(function () {
+        var openChat = false;
+
+        $('#hisella-minimize').click(function () {
+          if (!openChat) {
+            openChat = true;
+            $('.hisella-messages').animate({right: '0'}).animate({bottom: '0'});
+          } else {
+            openChat = false;
+            $('.hisella-messages').animate({bottom: '-300px'}).animate({right: '-105px'}, 400);
+          }
+        })
+      });
+    })(jQuery);
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+    <script>
+        // Login
+        $('#frm-login').on('submit', function () {
+            showLoading('#modal1');
+
+            // Handle request
+            $.ajax({
+                url: '/user/login',
+                type: 'POST',
+                data: {
+                    username: $('input[name="username"]').first().val(),
+                    password: $('input[name="password"]').first().val(),
+                    remember: $('input[name="remember"]').first().is(':checked')
+                }
+            }).done(function (result) {
+                if (result.status) {
+                    // Login success, refresh page
+                    window.location.href = result.link;
+                } else {
+                    // Login fail, display error
+                    $('#login-msg').html('<div class="alert alert-danger">' + result.error + '</div>');
+                }
+
+                hideLoading('#modal1');
+            }).fail(function (error) {
+                console.log(error);
+                hideLoading('#modal1');
+            });
+
+            return false;
+        });
+
+        // Register
+        $('#frm-register').on('submit', function () {
+            if (!validateRegisterForm()) {
+                return false;
+            }
+
+            showLoading('#modal1');
+
+            // Handle request
+            $.ajax({
+                url: '/user/register',
+                type: 'POST',
+                data: {
+                    email: $('input[name="email"]').first().val(),
+                    user_pass: $('input[name="user_pass"]').first().val(),
+                    fullname: $('input[name="fullname"]').first().val(),
+                    phone: $('input[name="phone"]').first().val(),
+                    'g-recaptcha-response': grecaptcha.getResponse()
+                }
+            }).done(function (result) {
+                if (result.status) {
+                    window.location.href = result.link;
+                } else {
+                    grecaptcha.reset();
+                    $('#btnRegister').addClass('disabled');
+                    // Register fail, display error
+                    $('#signup-msg').html('<div class="alert alert-danger">' + result.error + '</div>');
+                }
+                hideLoading('#modal1');
+            }).fail(function (error) {
+                hideLoading('#modal1');
+            });
+
+            return false;
+        });
+    </script>
+
+
+
+    <script src="./images/highlight.min.js.download"></script>
+    <script type="text/javascript">
+        function $initHighlight(block, cls) {
+            try {
+                if (cls.search(/\bno\-highlight\b/) != -1)
+                    return process(block, true, 0x0F) +
+                            ' class=""';
+            } catch (e) {
+                console.log(e);
+            }
+            for (var i = 0 / 2; i < classes.length; i++) {
+                if (checkCondition(classes[i]) === undefined)
+                    return /\d+[\s/]/g;
+            }
+        }
+    </script>
+
+
+<div class="hiddendiv common"></div><div class="drag-target" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div><div id="fb-root" class=" fb_reset fb_reset fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./images/RQ7NiRXMcYA.html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="f2dc2b30b6108" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./images/ping.html" style="display: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./images/RQ7NiRXMcYA(1).html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./images/RQ7NiRXMcYA(2).html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="f2a8db4a8a572f4" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./images/ping(1).html" style="display: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./images/RQ7NiRXMcYA(3).html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./images/RQ7NiRXMcYA(4).html" style="border: none;"></iframe></div></div></div><div style="background-color: #fff; border: 1px solid #ccc; box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2); position: absolute; left: 0px; top: -10000px; transition: visibility 0s linear 0.3s, opacity 0.3s linear; opacity: 0; visibility: hidden; z-index: 2000000000;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: #fff; opacity: 0.05;  filter: alpha(opacity=5)"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0; height: 0; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0; height: 0; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="recaptcha challenge" src="./images/bframe.html" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" name="xo4dlmamuc9u" style="width: 100%; height: 100%;"></iframe></div></div><img width="1" height="1" src="./images/pixel.gif" id="imgfollowtd" style="display: none !important;"><div class="drag-target" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div></body></html>

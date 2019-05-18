@@ -1,0 +1,6 @@
+\\nvmanh\SHARE\Web\Tài liệu mới\03. C#\WpfHello2\GreetingLogic\bin\Debug\GreetingLogic.dll
+\\nvmanh\SHARE\Web\Tài liệu mới\03. C#\WpfHello2\GreetingLogic\bin\Debug\GreetingLogic.pdb
+\\nvmanh\SHARE\Web\Tài liệu mới\03. C#\WpfHello2\GreetingLogic\obj\Debug\GreetingLogic.csprojResolveAssemblyReference.cache
+\\nvmanh\SHARE\Web\Tài liệu mới\03. C#\WpfHello2\GreetingLogic\obj\Debug\GreetingLogic.csproj.CoreCompileInputs.cache
+\\nvmanh\SHARE\Web\Tài liệu mới\03. C#\WpfHello2\GreetingLogic\obj\Debug\GreetingLogic.dll
+\\nvmanh\SHARE\Web\Tài liệu mới\03. C#\WpfHello2\GreetingLogic\obj\Debug\GreetingLogic.pdb

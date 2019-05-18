@@ -1,0 +1,126 @@
+﻿form {
+    margin: 0px auto;
+}
+
+body {
+}
+
+.detail {
+    display: block;
+    clear: both;
+}
+
+    .detail label {
+        /*margin-left: 20px;*/
+        line-height: 32px;
+    }
+
+        .detail label > .required {
+            color: red;
+        }
+
+    .detail input {
+        width: 90%;
+        height: 21px;
+    }
+
+    .detail textarea {
+        /*margin-left: 8px;*/
+    }
+
+    .detail .row {
+        width: 100%;
+        /*margin-top: 2px;*/
+        clear: both;
+        display: inline-flex;
+    }
+
+
+.col-label {
+    float: left;
+    width: 105px;
+    display: table-cell;
+}
+
+.col-input-single {
+    /*padding: 4px;*/
+    display: table-cell;
+    float: left;
+    width: 200px;
+}
+
+    .col-input-single select {
+        display: table-cell;
+        /*margin-left: 8px;*/
+        float: left;
+        width: 172px;
+        height: 26px !important;
+    }
+
+.col4 {
+    /*padding: 4px;*/
+    display: table-cell;
+    width: 472px;
+    float: left;
+    /*width:100%;*/
+}
+
+    .col4 > input {
+        width: 474px;
+    }
+
+    .col4 > textarea {
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 50px;
+        max-height: 100px;
+    }
+
+
+.buttombar table {
+    width: 100%;
+}
+
+    .buttombar table input[type="button"] {
+        height: 25px;
+        padding: 3px 16px 3px 36px;
+        right: auto;
+        left: 263px;
+        top: 0px;
+        margin: 0px;
+        background-color: #fcfcfc !important;
+        border-color: #ccc;
+        border-radius: 0 !important;
+        border-width: 1px;
+        border-style: solid;
+        border-color: buttonface;
+        border-image: initial;
+        background-image: none !important;
+        display: inline-block;
+        outline: 0;
+        cursor: pointer;
+        white-space: nowrap;
+        text-decoration: none;
+        vertical-align: top;
+        overflow: hidden;
+    }
+
+        .buttombar table input[type="button"]:hover {
+            background-color: #ccc;
+        }
+
+        .buttombar table input[type="button"].icon-btnHelp {
+            background: url(../Icons/Help16.png) no-repeat 16px 50% !important;
+        }
+
+        .buttombar table input[type="button"].icon-btnSave {
+            background: url(../Icons/Save16.png) no-repeat 16px 50% !important;
+        }
+
+        .buttombar table input[type="button"].icon-btnSaveAndAdd {
+            background: url(../Icons/SaveAdd16.png) no-repeat 16px 50% !important;
+        }
+
+        .buttombar table input[type="button"].icon-btnCancel {
+            background: url(../Icons/Disable16.png) no-repeat 16px 50% !important;
+        }

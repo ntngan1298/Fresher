@@ -1,0 +1,52 @@
+﻿body {
+}
+
+.demoDiv {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    width: 100px;
+    height: 50px;
+    border: 1px solid #ff0000;
+}
+
+.demoDiv2 {
+    position: fixed;
+    top: 100px;
+    left: 50px;
+    width: 100px;
+    height: 50px;
+    border: 1px solid #ffd800;
+}
+
+.required {
+    border: 1px solid #00ffff;
+}
+
+
+.poupCustome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #ccc;
+    opacity: 0.8;
+}
+
+.wdCustome {
+    width: 400px;
+    height: 300px;
+    background-color: #000;
+    opacity: initial !important;
+}
+
+table {
+    width: 100%;
+}
+
+
+input[title]:hover{
+    border: 1px solid #ff0000 !important;
+    color: red;
+}

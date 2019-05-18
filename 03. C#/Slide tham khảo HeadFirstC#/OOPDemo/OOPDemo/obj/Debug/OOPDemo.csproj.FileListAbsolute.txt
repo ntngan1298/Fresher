@@ -1,0 +1,10 @@
+\\nvmanh\SHARE\Web\Tài liệu mới\03. C#\OOPDemo\OOPDemo\bin\Debug\OOPDemo.exe.config
+\\nvmanh\SHARE\Web\Tài liệu mới\03. C#\OOPDemo\OOPDemo\bin\Debug\OOPDemo.exe
+\\nvmanh\SHARE\Web\Tài liệu mới\03. C#\OOPDemo\OOPDemo\bin\Debug\OOPDemo.pdb
+\\nvmanh\SHARE\Web\Tài liệu mới\03. C#\OOPDemo\OOPDemo\obj\Debug\OOPDemo.csproj.CoreCompileInputs.cache
+\\nvmanh\SHARE\Web\Tài liệu mới\03. C#\OOPDemo\OOPDemo\obj\Debug\OOPDemo.exe
+\\nvmanh\SHARE\Web\Tài liệu mới\03. C#\OOPDemo\OOPDemo\obj\Debug\OOPDemo.pdb
+\\nvmanh\SHARE\Web\Tài liệu mới\03. C#\OOPDemo\OOPDemo\obj\Debug\OOPDemo.csprojAssemblyReference.cache
+\\nvmanh\SHARE\Web\Tài liệu mới\03. C#\Slide tham khảo HeadFirstC#\OOPDemo\OOPDemo\bin\Debug\OOPDemo.exe.config
+\\nvmanh\SHARE\Web\Tài liệu mới\03. C#\Slide tham khảo HeadFirstC#\OOPDemo\OOPDemo\obj\Debug\OOPDemo.exe
+\\nvmanh\SHARE\Web\Tài liệu mới\03. C#\Slide tham khảo HeadFirstC#\OOPDemo\OOPDemo\obj\Debug\OOPDemo.pdb

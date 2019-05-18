@@ -1,0 +1,6 @@
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\LINQ-Demos\JoinDemo\bin\Debug\JoinDemo.exe
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\LINQ-Demos\JoinDemo\bin\Debug\JoinDemo.pdb
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\LINQ-Demos\JoinDemo\obj\Debug\09. JoinDemo.csprojAssemblyReference.cache
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\LINQ-Demos\JoinDemo\obj\Debug\09. JoinDemo.csproj.CoreCompileInputs.cache
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\LINQ-Demos\JoinDemo\obj\Debug\JoinDemo.exe
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\LINQ-Demos\JoinDemo\obj\Debug\JoinDemo.pdb

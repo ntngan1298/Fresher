@@ -1,0 +1,46 @@
+﻿
+.rowSelected {
+    background-color: antiquewhite;
+}
+
+textarea {
+    resize: none;
+    min-height: 48px;
+}
+
+#dialog-message {
+    display: none;
+}
+
+.modal-dialog .ui-dialog {
+    width: 565px !important;
+    height: 275px !important;
+}
+
+.ui-dialog-buttonset {
+    width: 100%;
+}
+
+.width-100 {
+    width: 100% !important;
+}
+
+.ui-draggable .ui-dialog-titlebar {
+    border-color: #0072bc !important;
+    background-color: #0072bc !important;
+    color: #fff;
+    /* padding: 3px 4px 1px 4px!important; */
+}
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 3px 5px 3px !important;
+    background-color: #fff;
+    font: 12px/15px TahomaCustom,arial,sans-serif !important;
+}
+
+    input[type=date] {
+        height: 27px;
+        font: 12px/15px TahomaCustom,arial,sans-serif !important;
+    }

@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="jquery-1.9.1.min.js"></script>
+    <script>
+
+$(document).ready(function () {
+    for (var i = 1; i <= 3; i++) {
+		(function(i){
+			$("#btn" + i).click(function () {
+				alert("Button " + i + " was clicked");
+			});
+		})(i);
+    }
+});
+
+function Pet(name) {
+    this.name = name;
+}
+
+Pet.prototype.getName = function () {
+    return this.name;
+}
+
+var p = new Pet("Micky");
+alert(p.getName());
+
+
+function Dog(name) {
+    Pet.call(this, name);
+}
+
+Dog.prototype = new Pet();
+
+var d = new Dog("M");
+
+alert(d.getName());
+
+var ninja = {
+            yell: function (n) {
+                return n > 0 ? this.yell(n - 1) + "a" : "hiy";
+            }
+        };
+var samurai = { yell: ninja.yell };
+var ninja = {};
+alert(samurai.yell(4));
+
+
+    </script>
+</head>
+<body>
+    <div id="btn1">Click</div>
+    <div id="btn2">Click</div>
+    <div id="btn3">Click</div>
+</body>
+</html>
+

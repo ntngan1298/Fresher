@@ -1,0 +1,417 @@
+﻿html, body {
+    height: 100%;
+    line-height: 100%;
+    font: bold 12px/16px helvetica,arial,verdana,sans-serif;
+    font-weight: normal !important;
+    margin: 0px;
+    padding: 0px;
+}
+
+    body a {
+        text-decoration: none;
+    }
+
+.required {
+    color: rgb(255, 0, 0);
+}
+
+.header {
+    margin: 0px auto;
+    height: 55px;
+    background-color: #0973b9;
+    vertical-align: middle;
+    line-height: 30px;
+    position: relative;
+    color: #ffffff;
+}
+
+
+    .header .bg-header {
+        width: 100%;
+        height: 30px;
+        background-image: url(../Icons/logo-text2.png);
+        background-repeat: no-repeat;
+        background-position: 2px center;
+        float: left;
+    }
+
+    .header .left-header {
+        cursor: pointer;
+        margin-left: 12px;
+        width: 24px;
+        margin-top: 4px;
+        height: 24px;
+        background-image: url(../Icons/icon-left-header.png);
+    }
+
+    .header .header-store-selected {
+        width: 250px;
+        padding: 12px 2px 0px 10px;
+        float: left;
+    }
+
+
+        .header .header-store-selected select {
+            height: 32px;
+            width: 250px;
+            background-color: #005082 !important;
+            color: #fff;
+            line-height: 24px !important;
+            border: none !important;
+        }
+
+    .header .header-right {
+        float: right;
+        height: 100%;
+    }
+
+        .header .header-right .header-account-settings {
+            width: 200px;
+            float: left;
+            padding: 14px 2px 0px 10px;
+            background-color: transparent !important;
+            color: #fff;
+            line-height: 24px !important;
+            border: none !important;
+            cursor: pointer;
+        }
+
+            .header .header-right .header-account-settings .info-avatar {
+                width: 26px;
+                height: 26px;
+                display: inline-block;
+                vertical-align: middle;
+                background-size: contain;
+                border-radius: 100px;
+                background-color: #fff;
+                background-image: url(../Icons/EmployeeImage.png);
+            }
+
+            .header .header-right .header-account-settings .arrow {
+                width: 22px;
+                height: 22px;
+                display: inline-block;
+                vertical-align: middle;
+                background-size: contain;
+                background-image: url(../Icons/default-small-arrow.png);
+            }
+
+            .header .header-right .header-account-settings a {
+                border-style: none;
+                border-width: 0;
+            }
+
+        .header .header-right .header-language-selected {
+            float: left;
+            margin-right: 10px;
+        }
+
+            .header .header-right .header-language-selected select {
+                height: 32px;
+                width: 150px;
+                float: left;
+                margin: 12px 2px 0px 10px;
+                background-color: #005082 !important;
+                color: #fff;
+                line-height: 24px !important;
+                border: none !important;
+            }
+
+
+
+.menu {
+    padding: 15px;
+}
+
+.container {
+    margin: 0px auto;
+    padding: 0px 20px;
+}
+
+.toolbar {
+    border: 1px solid #ccc;
+    background-color: #ededed;
+}
+
+    .toolbar a {
+        color: #000;
+    }
+
+    .toolbar table {
+        border: 0px;
+    }
+
+        .toolbar table th {
+            font-size: 12px;
+            font-weight: normal;
+        }
+
+            .toolbar table th .toolbar-item-text {
+                padding-left: 4px;
+            }
+
+            .toolbar table th .item-toolbar {
+                padding: 4px;
+            }
+
+                .toolbar table th .item-toolbar:hover {
+                    cursor: pointer;
+                    border: 1px solid #0973b9;
+                    background-color: #ffffff;
+                }
+
+        .toolbar table tbody tr th .icon-btnAdd {
+            background: url(../Icons/Add16.png) no-repeat 50% 50% !important;
+            display: inline-block;
+            margin-right: 0;
+            background-color: transparent;
+            background-repeat: no-repeat;
+            width: 16px;
+            height: 16px !important;
+            vertical-align: middle;
+        }
+
+        .toolbar table tbody tr th .icon-btnSave {
+            background: url(../Icons/Save16.png) no-repeat 50% 50% !important;
+            display: inline-block;
+            margin-right: 0;
+            background-color: transparent;
+            background-repeat: no-repeat;
+            width: 16px;
+            height: 16px !important;
+            vertical-align: middle;
+        }
+
+        .toolbar table tbody tr th .icon-btnEdit {
+            background: url(../Icons/Edit16.png) no-repeat 50% 50% !important;
+            display: inline-block;
+            margin-right: 0;
+            background-color: transparent;
+            background-repeat: no-repeat;
+            width: 16px;
+            height: 16px !important;
+            vertical-align: middle;
+        }
+
+        .toolbar table tbody tr th .icon-btnDelete {
+            background: url(../Icons/Delete16.png) no-repeat 50% 50% !important;
+            display: inline-block;
+            margin-right: 0;
+            background-color: transparent;
+            background-repeat: no-repeat;
+            width: 16px;
+            height: 16px !important;
+            vertical-align: middle;
+        }
+
+        .toolbar table tbody tr th .icon-btnUndo {
+            background: url(../Icons/Undo16.png) no-repeat 50% 50% !important;
+            display: inline-block;
+            margin-right: 0;
+            background-color: transparent;
+            background-repeat: no-repeat;
+            width: 16px;
+            height: 16px !important;
+            vertical-align: middle;
+        }
+
+        .toolbar table tbody tr th .icon-btnCopy {
+            background: url(../Icons/Copy16.png) no-repeat 50% 50% !important;
+            display: inline-block;
+            margin-right: 0;
+            background-color: transparent;
+            background-repeat: no-repeat;
+            width: 16px;
+            height: 16px !important;
+            vertical-align: middle;
+        }
+
+        .toolbar table tbody tr th .icon-btnHelp {
+            background: url(../Icons/Help16.png) no-repeat 50% 50% !important;
+            display: inline-block;
+            margin-right: 0;
+            background-color: transparent;
+            background-repeat: no-repeat;
+            width: 16px;
+            height: 16px !important;
+            vertical-align: middle;
+        }
+
+        .toolbar table tbody tr th .icon-btnExport {
+            background: url(../Icons/excel_97_24.png) no-repeat 50% 50% !important;
+            display: inline-block;
+            margin-right: 0;
+            background-color: transparent;
+            background-repeat: no-repeat;
+            width: 16px;
+            height: 16px !important;
+            vertical-align: middle;
+        }
+
+        .toolbar table tbody tr th .icon-btnImport {
+            background: url(../Icons/Import16.png) no-repeat 50% 50% !important;
+            display: inline-block;
+            margin-right: 0;
+            background-color: transparent;
+            background-repeat: no-repeat;
+            width: 16px;
+            height: 16px !important;
+            vertical-align: middle;
+        }
+.container{
+    padding-bottom:60px;
+}
+.container .detail table {
+    border-right: 1px solid #ccc;
+}
+
+    .container .detail table tbody tr:hover {
+        background-color: #ccc;
+    }
+
+    .container .detail table tbody tr td {
+        border-left: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .container .detail table thead tr td {
+        text-align: center;
+        font-weight: bold;
+        border-left: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+
+table thead tr {
+    background-color: #ededed;
+}
+
+table {
+    border-collapse: unset !important;
+}
+
+.footer {
+    height: 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+    margin-bottom: 0px;
+    text-align: center;
+    padding: 10px;
+    color: #0072bc;
+    font-weight: bold;
+}
+
+.popup {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0,0,0,0.75);
+}
+
+.popupInfoDetail {
+    padding: 4px 8px;
+    max-width: 700px;
+    min-height: 290px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 5px solid #0072bc;
+    border-radius: 3px;
+}
+
+.popup-header {
+    height: 30px;
+    display: inline-block;
+    background-color: #0072bc;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    color: #ffffff;
+    line-height: 34px;
+    padding-left: 8px;
+    font-weight: bold;
+}
+
+/* Close Button */
+.popup-close {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    text-decoration: none;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    border: none;
+    background-color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 100%;
+    color: #0072bc;
+    border-radius: 100px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.popup-content {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    right: 0px;
+    /*bottom: 0px;*/
+    left: 0;
+}
+
+
+        .popup-content .detail-popup table {
+            width: 100%;
+            border: 0;
+        }
+
+            .popup-content .detail-popup table td {
+                max-width: 100%;
+            }
+
+            .popup-content .detail-popup table tr td input, select, textarea {
+                width: 100%;
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                height: 25px;
+            }
+
+            .popup-content .detail-popup table tr td textarea {
+                width: 100%;
+                max-width: 100%;
+                min-height: 50px;
+                max-height: 100px;
+            }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { /*safari and chrome*/
+    option {
+        height: 50px !important;
+        line-height: 50px !important;
+    }
+}
+
+.buttombar {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.buttombar table input[type=button]:hover {
+        background-color: rgb(182, 255, 0);
+    }

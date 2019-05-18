@@ -1,0 +1,11 @@
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.Modal\bin\Debug\MISA.WebApi.Modal.dll
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.Modal\bin\Debug\MISA.WebApi.Modal.pdb
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.Modal\obj\Debug\MISA.WebApi.Modal.csprojResolveAssemblyReference.cache
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.Modal\obj\Debug\MISA.WebApi.Modal.dll
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.Modal\obj\Debug\MISA.WebApi.Modal.pdb
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.Modal\bin\Debug\MISA.WebApi.Modal.dll
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.Modal\bin\Debug\MISA.WebApi.Modal.pdb
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.Modal\obj\Debug\MISA.WebApi.Modal.csprojResolveAssemblyReference.cache
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.Modal\obj\Debug\MISA.WebApi.Modal.csproj.CoreCompileInputs.cache
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.Modal\obj\Debug\MISA.WebApi.Modal.dll
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.Modal\obj\Debug\MISA.WebApi.Modal.pdb

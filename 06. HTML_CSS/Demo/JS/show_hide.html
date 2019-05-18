@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo show hide</title>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#hide").click(function () {
+                $(this).hide("slow");
+            });
+
+            $("#show").click(function () {
+                $("#hide").show("slow");
+            });
+
+        });
+    </script>
+</head>
+<body>
+   
+    <div id="hide" style="background-color:red; height:100px; width:100px"></div>
+    <input type="button" value="Hiển thị DIV" id="show" />
+</body>
+</html>

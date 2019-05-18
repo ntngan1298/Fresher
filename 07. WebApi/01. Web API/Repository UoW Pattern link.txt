@@ -1,0 +1,5 @@
+https://techbrij.com/generic-repository-unit-of-work-entity-framework-unit-testing-asp-net-mvc
+
+https://www.codeproject.com/Articles/770156/Understanding-Repository-and-Unit-of-Work-Pattern
+
+https://www.codeproject.com/Articles/576681/UnderstandingplusandplusImplementingplusRepository

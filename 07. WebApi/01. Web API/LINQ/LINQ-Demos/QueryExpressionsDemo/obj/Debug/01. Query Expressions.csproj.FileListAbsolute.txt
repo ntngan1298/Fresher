@@ -1,0 +1,6 @@
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\LINQ-Demos\QueryExpressionsDemo\bin\Debug\QueryExpressionsDemo.exe
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\LINQ-Demos\QueryExpressionsDemo\bin\Debug\QueryExpressionsDemo.pdb
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\LINQ-Demos\QueryExpressionsDemo\obj\Debug\01. Query Expressions.csprojAssemblyReference.cache
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\LINQ-Demos\QueryExpressionsDemo\obj\Debug\01. Query Expressions.csproj.CoreCompileInputs.cache
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\LINQ-Demos\QueryExpressionsDemo\obj\Debug\QueryExpressionsDemo.exe
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\LINQ-Demos\QueryExpressionsDemo\obj\Debug\QueryExpressionsDemo.pdb

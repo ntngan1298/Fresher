@@ -1,0 +1,80 @@
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\MISA.WebApi.CustomerManager.dll.config
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\MISA.WebApi.CustomerManager.dll
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\MISA.WebApi.CustomerManager.pdb
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\CommonServiceLocator.dll
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Microsoft.Web.Infrastructure.dll
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\MISA.WebApi.Modal.dll
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\MISA.WebApi.Repository.dll
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\MISA.WebApi.Services.dll
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Newtonsoft.Json.dll
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\System.Net.Http.Formatting.dll
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\System.Web.Http.dll
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\System.Web.Http.WebHost.dll
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Unity.Abstractions.dll
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Unity.AspNet.WebApi.dll
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Unity.Configuration.dll
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Unity.Container.dll
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Unity.Interception.Configuration.dll
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Unity.Interception.dll
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Unity.RegistrationByConvention.dll
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Unity.ServiceLocation.dll
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\WebActivatorEx.dll
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\MISA.WebApi.Modal.pdb
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\MISA.WebApi.Repository.pdb
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\MISA.WebApi.Services.pdb
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\CommonServiceLocator.pdb
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Unity.Configuration.pdb
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Unity.Interception.pdb
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Unity.Interception.Configuration.pdb
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Unity.RegistrationByConvention.pdb
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Unity.ServiceLocation.pdb
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Newtonsoft.Json.xml
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\System.Net.Http.Formatting.xml
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\System.Web.Http.xml
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\System.Web.Http.WebHost.xml
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\obj\Debug\MISA.WebApi.CustomerManager.csprojResolveAssemblyReference.cache
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\obj\Debug\MISA.WebApi.CustomerManager.dll
+D:\OnlineFresherTraining\MISA.FresherTraining\01. Web\Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\obj\Debug\MISA.WebApi.CustomerManager.pdb
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\MISA.WebApi.CustomerManager.dll.config
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\MISA.WebApi.CustomerManager.dll
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\MISA.WebApi.CustomerManager.pdb
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\CommonServiceLocator.dll
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Microsoft.Web.Infrastructure.dll
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\MISA.WebApi.Modal.dll
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\MISA.WebApi.Repository.dll
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\MISA.WebApi.Services.dll
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Newtonsoft.Json.dll
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\System.Net.Http.Formatting.dll
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\System.Web.Http.dll
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\System.Web.Http.WebHost.dll
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Unity.Abstractions.dll
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Unity.AspNet.WebApi.dll
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Unity.Configuration.dll
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Unity.Container.dll
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Unity.Interception.Configuration.dll
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Unity.Interception.dll
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Unity.RegistrationByConvention.dll
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Unity.ServiceLocation.dll
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\WebActivatorEx.dll
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\MISA.WebApi.Modal.pdb
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\MISA.WebApi.Repository.pdb
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\MISA.WebApi.Services.pdb
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\CommonServiceLocator.pdb
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Unity.Configuration.pdb
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Unity.Interception.pdb
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Unity.Interception.Configuration.pdb
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Unity.RegistrationByConvention.pdb
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Unity.ServiceLocation.pdb
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\Newtonsoft.Json.xml
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\System.Net.Http.Formatting.xml
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\System.Web.Http.xml
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\bin\System.Web.Http.WebHost.xml
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\obj\Debug\MISA.WebApi.CustomerManager.csprojResolveAssemblyReference.cache
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\obj\Debug\MISA.WebApi.CustomerManager.csproj.CoreCompileInputs.cache
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\obj\Debug\MISA.WebApi.CustomerManager.dll
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\obj\Debug\MISA.WebApi.CustomerManager.pdb
+\\nvmanh\SHARE\Web\Tài liệu mới\07. WebApi\01. Web API\DemoWebAPI_Final\MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager\obj\Debug\MISA.WebApi.CustomerManager.csproj.CopyComplete

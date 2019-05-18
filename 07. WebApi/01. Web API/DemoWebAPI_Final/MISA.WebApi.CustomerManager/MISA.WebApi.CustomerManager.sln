@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MISA.WebApi.CustomerManager", "MISA.WebApi.CustomerManager\MISA.WebApi.CustomerManager.csproj", "{FF7EEEAD-DFB2-4BCF-941C-441B7B9D7505}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MISA.WebApi.Tests", "MISA.WebApi.Tests\MISA.WebApi.Tests.csproj", "{F2C6C24F-902D-4A9A-9069-E37C08935CF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MISA.WebApi.Repository", "MISA.WebApi.Repository\MISA.WebApi.Repository.csproj", "{E6C96F82-AD7E-40C4-92CE-F80E05D341BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MISA.WebApi.Modal", "MISA.WebApi.Modal\MISA.WebApi.Modal.csproj", "{DB533B4C-BB7B-4137-8A3D-5B91A303D9D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MISA.WebApi.Services", "MISA.WebApi.Services\MISA.WebApi.Services.csproj", "{3831745D-285F-46C6-8F5E-DD795020D71F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF7EEEAD-DFB2-4BCF-941C-441B7B9D7505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF7EEEAD-DFB2-4BCF-941C-441B7B9D7505}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF7EEEAD-DFB2-4BCF-941C-441B7B9D7505}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF7EEEAD-DFB2-4BCF-941C-441B7B9D7505}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2C6C24F-902D-4A9A-9069-E37C08935CF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2C6C24F-902D-4A9A-9069-E37C08935CF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2C6C24F-902D-4A9A-9069-E37C08935CF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2C6C24F-902D-4A9A-9069-E37C08935CF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6C96F82-AD7E-40C4-92CE-F80E05D341BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6C96F82-AD7E-40C4-92CE-F80E05D341BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6C96F82-AD7E-40C4-92CE-F80E05D341BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6C96F82-AD7E-40C4-92CE-F80E05D341BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB533B4C-BB7B-4137-8A3D-5B91A303D9D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB533B4C-BB7B-4137-8A3D-5B91A303D9D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB533B4C-BB7B-4137-8A3D-5B91A303D9D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB533B4C-BB7B-4137-8A3D-5B91A303D9D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3831745D-285F-46C6-8F5E-DD795020D71F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3831745D-285F-46C6-8F5E-DD795020D71F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3831745D-285F-46C6-8F5E-DD795020D71F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3831745D-285F-46C6-8F5E-DD795020D71F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E4A3483E-AC92-426D-9574-32E9518A4BC4}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tungnt185.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MISA.WebApi.CustomerManager\\MISA.WebApi.CustomerManager.csproj
+		SccProjectName1 = MISA.WebApi.CustomerManager
+		SccLocalPath1 = MISA.WebApi.CustomerManager
+		SccProjectUniqueName2 = MISA.WebApi.Modal\\MISA.WebApi.Modal.csproj
+		SccProjectName2 = MISA.WebApi.Modal
+		SccLocalPath2 = MISA.WebApi.Modal
+		SccProjectUniqueName3 = MISA.WebApi.Repository\\MISA.WebApi.Repository.csproj
+		SccProjectName3 = MISA.WebApi.Repository
+		SccLocalPath3 = MISA.WebApi.Repository
+		SccProjectUniqueName4 = MISA.WebApi.Services\\MISA.WebApi.Services.csproj
+		SccProjectName4 = MISA.WebApi.Services
+		SccLocalPath4 = MISA.WebApi.Services
+		SccProjectUniqueName5 = MISA.WebApi.Tests\\MISA.WebApi.Tests.csproj
+		SccProjectName5 = MISA.WebApi.Tests
+		SccLocalPath5 = MISA.WebApi.Tests
+	EndGlobalSection
+EndGlobal

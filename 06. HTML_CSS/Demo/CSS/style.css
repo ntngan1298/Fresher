@@ -1,0 +1,57 @@
+html, body {
+    background-color:#ebebeb;
+}
+/*Background-----------------------*/
+#bg {
+    background-color:green;
+    height:50px;
+}
+
+/*Text-align------------------------*/
+#textalign {
+    text-align:center;
+}
+
+.align-left {
+    text-align:left;
+}
+
+.align-right {
+    text-align:right;
+}
+
+.align-justify {
+    text-align:justify;
+    width:500px;
+}
+
+/*Border-----------------------*/
+.border-css {
+    border: 5px dashed red;
+    width:300px;
+    height:150px;
+}
+
+/*Float, margin, padding----------*/
+.fleft {
+    float:left;
+    width:300px;
+    height:50px;
+    background-color:red;
+    margin-right:15px;
+    padding:15px;
+    color:#FFF;
+}
+
+.fright {
+    float:left;
+    width:300px;
+    height:50px;
+    background-color:green;
+}
+    .clear::after {
+        content:'';
+        display:block;
+        clear:both;
+    }
+   

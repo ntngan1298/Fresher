@@ -1,0 +1,11 @@
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\Entity-Framework-Demos\ReadingFromMultipleTables\bin\Debug\ReadingFromMultipleTables.exe.config
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\Entity-Framework-Demos\ReadingFromMultipleTables\bin\Debug\ReadingFromMultipleTables.exe
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\Entity-Framework-Demos\ReadingFromMultipleTables\bin\Debug\ReadingFromMultipleTables.pdb
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\Entity-Framework-Demos\ReadingFromMultipleTables\bin\Debug\UsingEntityFrameworkModel.dll
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\Entity-Framework-Demos\ReadingFromMultipleTables\bin\Debug\UsingEntityFrameworkModel.pdb
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\Entity-Framework-Demos\ReadingFromMultipleTables\bin\Debug\UsingEntityFrameworkModel.dll.config
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\Entity-Framework-Demos\ReadingFromMultipleTables\obj\x86\Debug\3. ReadingFromMultipleTables.csprojAssemblyReference.cache
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\Entity-Framework-Demos\ReadingFromMultipleTables\obj\x86\Debug\3. ReadingFromMultipleTables.csproj.CoreCompileInputs.cache
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\Entity-Framework-Demos\ReadingFromMultipleTables\obj\x86\Debug\3. ReadingFromMultipleTables.csproj.CopyComplete
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\Entity-Framework-Demos\ReadingFromMultipleTables\obj\x86\Debug\ReadingFromMultipleTables.exe
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\Entity-Framework-Demos\ReadingFromMultipleTables\obj\x86\Debug\ReadingFromMultipleTables.pdb

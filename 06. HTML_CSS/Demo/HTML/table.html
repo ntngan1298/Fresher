@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo table</title>
+    <style type="text/css">
+        html, body {
+            font-size: 12px;
+            line-height: 21px;
+            font-family: Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        .main {
+            width: 980px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+        /*Menu----------------------------*/
+        .menu {
+            background-color: green;
+            margin: 0;
+            padding: 0;
+        }
+
+            .menu a {
+                color: #FFF;
+                text-decoration: none;
+            }
+
+                .menu a:hover {
+                    text-decoration: underline;
+                }
+
+            .menu li {
+                list-style-type: none;
+                padding: 5px 10px;
+                display: inline-block;
+            }
+
+        table, tr, td {
+            border: solid 1px #DDDDDD;
+            padding: 5px;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <ul class="menu">
+            <li>
+                <a href="index.html">Trang chủ</a>
+            </li>
+            <li><a href="block.html">HTML Blocks</a></li>
+            <li>
+                <a href="heading.html">Heading</a>
+            </li>
+            <li>
+                <a href="table.html">Table</a>
+            </li>
+            <li>
+                <a href="image.html">Image</a>
+            </li>
+            <li>
+                <a href="list.html">HTML Lists</a>
+            </li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div style="padding-left:15px">
+            <h1>Demo sử dụng table</h1>
+            <h4>Dùng table tạo bảng thông tin học sinh</h4>
+            <table>
+                <tr style="background-color:#ebebeb; font-weight:bold; text-align:center;">
+                    <td>STT</td>
+                    <td>Họ và tên</td>
+                    <td>Địa chỉ</td>
+                    <td>Email</td>
+                    <td>Số điện thoại</td>
+                    <td>Ghi chú</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Hò Văn Tèn</td>
+                    <td>Cầu Giấy - Hà Nội</td>
+                    <td>hvt@gmail.com</td>
+                    <td>0988.624.888</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Hò Văn Tèn</td>
+                    <td>Cầu Giấy - Hà Nội</td>
+                    <td>hvt@gmail.com</td>
+                    <td>0988.624.888</td>
+                    <td></td>
+                </tr>
+            </table>
+            <h4>Dùng table chia layout cho trang web:</h4>
+            <table style="width:800px">
+                <tr>
+                    <td style="background-color:green; color:#FFF">Left panel</td>
+                    <td style="background-color: red; color: #FFF">Right panel</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+</body>
+</html>

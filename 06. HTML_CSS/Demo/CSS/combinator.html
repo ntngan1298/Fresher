@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo combinators</title>
+    <style>
+        div~p  {
+            background-color: yellow;
+        }
+        div~p span  {
+            background-color: red;
+        }
+        .last-p {background:#ff0}
+        div p:last-child {font-size:30px;}
+    </style>
+</head>
+<body>
+
+    <div>
+        <p>Child1</p>
+        <p>Child2</p>
+       <p>Child3</p>
+    </div>
+    <p>abc
+        <span>hello</span>
+        <b>
+            <span>hello2</span>
+        </b>
+    </p>
+    <p class="last-p">123</p>
+    <div>Sibling</div>
+
+</body>
+</html>

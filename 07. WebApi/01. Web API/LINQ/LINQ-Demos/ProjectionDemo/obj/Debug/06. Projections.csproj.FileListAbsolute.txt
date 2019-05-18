@@ -1,0 +1,5 @@
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\LINQ-Demos\ProjectionDemo\bin\Debug\ProjectionDemo.exe
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\LINQ-Demos\ProjectionDemo\bin\Debug\ProjectionDemo.pdb
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\LINQ-Demos\ProjectionDemo\obj\Debug\06. Projections.csproj.CoreCompileInputs.cache
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\LINQ-Demos\ProjectionDemo\obj\Debug\ProjectionDemo.exe
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\LINQ-Demos\ProjectionDemo\obj\Debug\ProjectionDemo.pdb

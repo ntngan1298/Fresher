@@ -1,0 +1,7 @@
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\Entity-Framework-Demos\UsingEntityFrameworkModel\bin\Debug\UsingEntityFrameworkModel.dll.config
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\Entity-Framework-Demos\UsingEntityFrameworkModel\bin\Debug\UsingEntityFrameworkModel.dll
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\Entity-Framework-Demos\UsingEntityFrameworkModel\bin\Debug\UsingEntityFrameworkModel.pdb
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\Entity-Framework-Demos\UsingEntityFrameworkModel\obj\Debug\1. UsingEntityFrameworkModel.csprojAssemblyReference.cache
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\Entity-Framework-Demos\UsingEntityFrameworkModel\obj\Debug\1. UsingEntityFrameworkModel.csproj.CoreCompileInputs.cache
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\Entity-Framework-Demos\UsingEntityFrameworkModel\obj\Debug\UsingEntityFrameworkModel.dll
+E:\Web\Tài liệu mới\07. WebApi\01. Web API\LINQ\Entity-Framework-Demos\UsingEntityFrameworkModel\obj\Debug\UsingEntityFrameworkModel.pdb

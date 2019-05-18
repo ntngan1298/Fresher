@@ -1,0 +1,7 @@
+\\nvmanh\SHARE\Web\Tài liệu mới\03. C#\CSharpExample\CSharpExample\bin\Debug\CSharpExample.exe.config
+\\nvmanh\SHARE\Web\Tài liệu mới\03. C#\CSharpExample\CSharpExample\bin\Debug\CSharpExample.exe
+\\nvmanh\SHARE\Web\Tài liệu mới\03. C#\CSharpExample\CSharpExample\bin\Debug\CSharpExample.pdb
+\\nvmanh\SHARE\Web\Tài liệu mới\03. C#\CSharpExample\CSharpExample\obj\Debug\CSharpExample.csprojResolveAssemblyReference.cache
+\\nvmanh\SHARE\Web\Tài liệu mới\03. C#\CSharpExample\CSharpExample\obj\Debug\CSharpExample.exe
+\\nvmanh\SHARE\Web\Tài liệu mới\03. C#\CSharpExample\CSharpExample\obj\Debug\CSharpExample.pdb
+\\nvmanh\SHARE\Web\Tài liệu mới\03. C#\CSharpExample\CSharpExample\obj\Debug\CSharpExample.csproj.CoreCompileInputs.cache

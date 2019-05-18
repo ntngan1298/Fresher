@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)https://googlechrome.github.io/devtools-samples/debug-js/get-started -->
+<html data-sbro-popup-lock="true" data-sbro-ads-lock="true" data-sbro-deals-lock="true" data-sbro-extensions-lock="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="https://googlechrome.github.io/devtools-samples/favicon-96x96.png">
+    <title>Demo: Get Started Debugging JavaScript with Chrome DevTools</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      h1 {
+        font-size: 1.5em
+      }
+      input, button {
+        min-width: 72px;
+        min-height: 36px;
+        border: 1px solid grey;
+      }
+      label, input, button {
+        display: block;
+      }
+      input {
+        margin-bottom: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Demo: Get Started Debugging JavaScript with Chrome DevTools</h1>
+    <label for="num1">Number 1</label>
+    <input placeholder="Number 1" id="num1">
+    <label for="num2">Number 2</label>
+    <input placeholder="Number 2" id="num2">
+    <button>Add Number 1 and Number 2</button>
+    <p>2 + 3 = 23</p>
+    <script src="./js/get-started.js"></script>
+  
+
+</body><script>function patch() {
+
+    window._open = window.open;
+    document._createElement = document.createElement;
+    document._createEvent = document.createEvent;
+    window._parent = (window.location != window.parent.location) ? document.referrer: document.location;
+
+    function getParent(el, selector) {
+        var parent = el.parentNode;
+        if (parent == document) {
+            return null;
+        }
+        if (parent.matches(selector)) {
+            return parent;
+        } else {
+            return getParent(parent, selector);
+        }
+    }
+
+    function blockWindow(args) {
+        var target;
+        if (window.event) {
+            target = window.event.target.tagName.toLowerCase() == 'a' ?
+                window.event.target : getParent(window.event.target, 'a');
+        }
+        parent.postMessage({
+            type: "safeBlock",
+            url: args && args.length > 0 ? args[0] : '',
+            args: args ? Array.from(args) : null,
+            href: target ? target.href : null
+        }, window._parent);
+    }
+
+    window.open = function() {
+        blockWindow(arguments);
+    };
+
+    dispatchEvent = function(element) {
+        return function(event) {
+            if (event.type == "click") {
+                blockWindow([element.getAttribute('href')]);
+            }
+        }
+    };
+
+    document.createElement = function() {
+        var element = document._createElement.apply(document, arguments);
+        if (arguments[0].toLowerCase() == 'a') {
+            element.dispatchEvent = dispatchEvent(element);
+        }
+        return element;
+    };
+
+    // Process saved popup.
+    var html = document.querySelector('html'),
+        key = 'data-sbro-popup-current',
+        url = html.getAttribute(key);
+    if (url) {
+        blockWindow([url]);
+    }
+
+}; patch();</script></html>
